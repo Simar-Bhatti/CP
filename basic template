@@ -1,0 +1,46 @@
+{
+
+"Print to console": {
+  "prefix": "my_template",
+  "body": [
+    "#include <iostream>",
+	"#include <vector>",
+	"#include <algorithm>",
+	"#include <cmath>",
+	"#include <map>",
+	"#include <set>",
+	"#include <stack>",
+	"#include <queue>",
+	"#include <bitset>",
+	"",
+	"typdef long long ll;",
+	"",
+	"using namespace std;",
+	"",
+
+	"void solve() {",
+		"",
+	"}",
+
+	"",
+	"",
+
+	"int main() {",
+	"    ios::sync_with_stdio(false);",
+	"    cin.tie(nullptr);",
+		"",
+		
+	"    ll t;",
+	"    cin >> t;",
+		
+	"    while (t--) {",
+	"        solve();",
+	"    }",
+		"",
+	"    return 0;",
+"}",
+  ],
+  "description": "CP basic template"
+}
+}
+
