@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build and run demo",
+            "type": "shell",
+            "options": {
+                "shell": {
+                    "executable": "/bin/bash",
+                    "args": ["-c"]
+                }
+            },
+            "command": "sh",
+            "args": [
+                "-c",
+                "g++ -std=c++23 -o demo demo.cpp && ./demo < input.txt > output.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "reveal": "never",  // Suppress terminal
+                "echo": true,       // Echo the command
+                "focus": false,     // Do not focus the terminal
+                "panel": "shared"   // Share the terminal panel if opened
+            },
+            "detail": "Compile and run demo with input redirection"
+        }
+    ]
+}
