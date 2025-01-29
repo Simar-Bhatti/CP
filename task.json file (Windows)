@@ -4,11 +4,7 @@
         {
             "label": "Compile and run",
             "type": "shell",
-            "command": "cmd",
-            "args": [
-                "/c",
-                "copy \"${file}\" \"${workspaceFolder}\\test.cpp\" && g++ test.cpp -o test && test < input.txt > output.txt && del test.exe && del test.cpp"
-            ],
+            "command": "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\" < input.txt > output.txt && del \"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
             "presentation": {
                 "reveal": "never"
             },
@@ -16,26 +12,12 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceFolder}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
+            "problemMatcher": "$gcc"
         },
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\mingw64\\bin\\gcc.exe", 
+            "command": "C:\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
