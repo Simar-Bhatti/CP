@@ -1,48 +1,50 @@
 {
 
-"Print to console": {
-  "prefix": "my_template",
-  "body": [
-    "#include <iostream>",
-	"#include <vector>",
-	"#include <algorithm>",
-	"#include <cmath>",
-	"#include <map>",
-	"#include <set>",
-	"#include <stack>",
-	"#include <queue>",
-	"#include <bitset>",
-	"#include <numeric>",
-	"#include <string>",
-	"",
-	"typedef long long ll;",
-	"",
-	"using namespace std;",
-	"",
-
-	"void solve() {",
+	"Print to console": {
+	  "prefix": "my_template",
+	  "body": [
+		"#include <iostream>",
+		"#include <vector>",
+		"#include <algorithm>",
+		"#include <cmath>",
+		"#include <map>",
+		"#include <unordered_map>",
+		"#include <set>",
+		"#include <unordered_set>",
+		"#include <stack>",
+		"#include <queue>",
+		"#include <bitset>",
+		"#include <numeric>",
+		"#include <string>",
+		"#include <climits>",
 		"",
+	
+		"using namespace std;",
+		"",
+	
+		"void solve() {",
+			"",
+		"}",
+	
+		"",
+		"",
+	
+		"int main() {",
+		"    ios::sync_with_stdio(false);",
+		"    cin.tie(nullptr);",
+			"",
+			
+		"    int t;",
+		"    cin >> t;",
+			
+		"    while (t--) {",
+		"        solve();",
+		"    }",
+			"",
+		"    return 0;",
 	"}",
-
-	"",
-	"",
-
-	"int main() {",
-	"    ios::sync_with_stdio(false);",
-	"    cin.tie(nullptr);",
-		"",
-		
-	"    ll t;",
-	"    cin >> t;",
-		
-	"    while (t--) {",
-	"        solve();",
-	"    }",
-		"",
-	"    return 0;",
-"}",
-  ],
-  "description": "CP basic template"
-}
-}
-
+	  ],
+	  "description": "CP basic template"
+	}
+	}
+	
